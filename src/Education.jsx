@@ -8,6 +8,7 @@ import myImage from './assets/Person-Assets.png';
 import ncfLogo from './assets/NCF-LOGO.png';
 import angelesLogo from './assets/angeles.jpg';
 import systemPlus from './assets/systemplus.jpg';
+import { Link } from 'react-router-dom';
 
 const Education = () => {
   return (
@@ -18,25 +19,28 @@ const Education = () => {
           <Navbar.Toggle aria-controls="navbarNav" />
           <Navbar.Collapse id="navbarNav" className="justify-content-center">
             <Nav className="mx-auto">
-              <Nav.Link id='nav-link' href="/">Home</Nav.Link>
-              <Nav.Link id='nav-link' href="/about">About</Nav.Link>
-              <Nav.Link id='nav-link' href="/education">Education</Nav.Link>
-              <Nav.Link id='nav-link' href="/hobbies">Hobbies</Nav.Link>
-              <Nav.Link id='nav-link' href="/contact">Contact</Nav.Link>
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
+              <Nav.Link as={Link} to="/about">About</Nav.Link>
+              <Nav.Link as={Link} to="/education">Education</Nav.Link>
+              <Nav.Link as={Link} to="/hobbies">Hobbies</Nav.Link>
+              <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <div>
+      <h3 className='myeduc'><u>My Education</u></h3>
+      </div>
 
-            <div class="container d-flex justify-content-center" id='cards'>
+            <div class="container d-flex justify-content-center" id='cards' className='education-container'>
         <div class="row align-items-start">
           <div class="col">
             <Card style={{ width: '18rem' }} id='card-body' >
             <Card.Img id='educ-img' variant="top" src={angelesLogo} />
             <Card.Body>
-              <Card.Title>Junior High</Card.Title>
-              <Card.Text>
-                Angeles City National Highschool
+              <Card.Title className='text-center'>Junior High</Card.Title>
+              <Card.Text style={{ textAlign:'justify' }}>
+                Angeles City National High School located in Angeles City, Pampanga, is one of the most prominent and established high schools in the region. It has a rich history that spans several decades, evolving from a small educational institution to a highly regarded secondary school in Central Luzon.                                                                                                                                                                      
               </Card.Text>
               <Button variant="success">Visit Page</Button>
             </Card.Body>
@@ -47,9 +51,9 @@ const Education = () => {
           <Card style={{ width: '18rem' }}>
           <Card.Img id='educ-img' variant="top" src={systemPlus} />
           <Card.Body>
-            <Card.Title>Senior High</Card.Title>
-            <Card.Text>
-              System Plus College Foundation
+            <Card.Title className='text-center'>Senior High</Card.Title>
+            <Card.Text style={{ textAlign:'justify' }}>
+              System Plus College Foundation,  located in Angeles City, Pampanga, is one of the prominent educational institutions in the region. It has a long history of providing quality education, offering a range of programs that cater to different levels of academic and technical training.
             </Card.Text>
             <Button variant="success">Visit Page</Button>
           </Card.Body>
@@ -59,9 +63,9 @@ const Education = () => {
           <Card style={{ width: '18rem' }}>
           <Card.Img id='educ-img' variant="top" src={ncfLogo} />
           <Card.Body>
-            <Card.Title className='text-center'>College</Card.Title>
-            <Card.Text className='text-center'>
-              Naga College Foundation Inc. 2024-2025
+            <Card.Title className='text-center'>Naga College</Card.Title>
+            <Card.Text style={{ textAlign:'justify' }}>
+              Naga College Foundation Inc. Providing quality education and contributing to the region’s economic. From its founding in 1947 to its current status as one of the top educational institutions, NCF has remained dedicated to empowering students through academic excellence, skills training.
             </Card.Text>
             <Button variant="success">Visit Page</Button>
           </Card.Body>

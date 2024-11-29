@@ -76,11 +76,6 @@ body {
   color: #f5eeee;
   text-wrap: wrap;
 }
-.main-content img{
-  padding-top: 5rem;
-  
-}
-
 
 .button {
   position: absolute;
@@ -283,3 +278,253 @@ body {
   color: white;
   text-align: center;
 }
+.profile-photo {
+  width: 300px;  
+  height: 300px; 
+  border-radius: 50%;
+  object-fit: cover; 
+  border: 3px solid #8e9bc4; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  margin-top: 60px;
+}
+/* Set the minimum height of the container */
+.education-container {
+  min-height: 40px; /* 80% of viewport height */
+  /* Optional: adds some spacing at the top */
+}
+
+/* Or, you can use height (in px or vh) */
+.education-container {
+  height: 80px; /* Full height of the viewport */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+.myeduc {
+  color:white;
+  text-align:center;
+  margin-top: 40px;
+}
+/* Hobbies.css */
+
+/* Main container to hold both text and image */
+.hobbies-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.hobbies-title {
+  font-size: 2.2rem;
+  color: #fcfcfc;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Styling for the text content */
+.hobbies-text {
+  font-family: 'Arial', sans-serif;
+  color: #faf8f8;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.hobbies-text p {
+  margin-bottom: 20px;
+}
+
+/* Image container styling */
+.hobbies-img-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Image styling */
+.hobbies-img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the image */
+.hobbies-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .hobbies-container {
+    padding: 30px 15px;
+  }
+
+  .hobbies-text {
+    padding: 0 10px;
+  }
+
+  .hobbies-img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hobbies-title {
+    font-size: 1.8rem;
+  }
+
+  .hobbies-text {
+    font-size: 1rem;
+  }
+
+  .hobbies-img {
+    max-width: 100%;
+  }
+}
+/* Contact.css */
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.box-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.info-wrap, .form-wrap {
+  width: 50%;
+  background: linear-gradient(90deg, 
+  rgba(70, 168, 224, 1) 0%, 
+  rgba(61, 147, 204, 1) 40%, 
+  rgba(0, 212, 255, 1) 100%);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info-sub-title {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.info-details {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info-details li {
+  margin-bottom: 10px;
+}
+
+.info-details i {
+  margin-right: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #333;
+}
+
+.form-wrap {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-fields .form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .box-wrapper {
+    flex-direction: column;
+  }
+
+  .info-wrap,
+  .form-wrap {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
