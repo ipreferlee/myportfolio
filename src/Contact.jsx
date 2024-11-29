@@ -47,7 +47,6 @@ const Contact = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
       {/* Contact Form Section */}
       <section id="section-wrapper">
         <div className="box-wrapper">
@@ -70,7 +69,7 @@ const Contact = () => {
                 <span>Instagram:</span> <a href="https://www.instagram.com/leerichardddddddd/">leerichardddddddd</a>
               </li>
             </ul>
-
+    </ul>
           </div>
 
           <div className="form-wrap">

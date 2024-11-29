@@ -1,5 +1,5 @@
 import React from 'react';
-import myImage from './assets/Person-Assets.png';
+import myImage from './assets/Person-Assets.png';  // Assuming you want to use this image
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -35,15 +35,16 @@ const About = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          animation: "backgroundChange 10s infinite alternate", 
+          animation: "backgroundChange 10s infinite alternate", // Ensure backgroundChange is defined in CSS
         }}
       >
+
         <div
           style={{
-            background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)", 
+            background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)", // Corrected gradient syntax
             padding: "40px",
             borderRadius: "15px",
-            boxShadow: "0 6px 15px rgba(0, 0, 0, 0.6)", 
+            boxShadow: "0 6px 15px rgba(0, 0, 0, 0.6)",
             maxWidth: "800px",
             width: "100%",
             textAlign: "center",
@@ -52,20 +53,34 @@ const About = () => {
           <h1
             style={{
               fontSize: "36px",
-              color: "#FFD700", 
+              color: "#FFD700",
               marginBottom: "20px",
               fontWeight: "bold",
               textTransform: "uppercase",
-              textShadow: "2px 2px 4px rgba(255, 255, 255, 0.1)", 
+              textShadow: "2px 2px 4px rgba(255, 255, 255, 0.1)",
             }}
           >
             About Me
           </h1>
 
+          {/* Image Section */}
+          <img 
+            src={myImage} 
+            alt="My Image"
+            style={{
+              width: "150px",
+              height: "150px",
+              borderRadius: "50%",
+              marginBottom: "20px",
+              objectFit: "cover",
+              border: "5px solid #FFD700", // Optional styling for the image border
+            }}
+          />
+
           <p
             style={{
               fontSize: "18px",
-              color: "#e0e0e0", 
+              color: "#e0e0e0",
               lineHeight: "1.8",
               marginBottom: "20px",
             }}
@@ -78,7 +93,7 @@ const About = () => {
           <p
             style={{
               fontSize: "18px",
-              color: "#c0c0c0", 
+              color: "#c0c0c0",
               lineHeight: "1.8",
             }}
           >
