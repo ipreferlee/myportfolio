@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
+
 const Contact = () => {
   // State for form inputs
   const [formData, setFormData] = useState({
@@ -47,6 +48,7 @@ const Contact = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
       {/* Contact Form Section */}
       <section id="section-wrapper">
         <div className="box-wrapper">
@@ -62,14 +64,13 @@ const Contact = () => {
               </li>
               <li>
                 <i className="fas fa-paper-plane"></i>
-                <span>Email:</span> <a href="https://mail.google.com/mail/u/0/#inbox">lrochoada@gbox.ncf.edu.ph</a>
-                </li>
-                <li>
+                <span>Email:</span> <a href="mailto:lrochoada@gbox.ncf.edu.ph">lrochoada@gbox.ncf.edu.ph</a>
+              </li>
+              <li>
                 <i className="fas fa-instagram"></i>
                 <span>Instagram:</span> <a href="https://www.instagram.com/leerichardddddddd/">leerichardddddddd</a>
               </li>
             </ul>
-    </ul>
           </div>
 
           <div className="form-wrap">
@@ -84,6 +85,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     className="fname"
                     placeholder="First Name"
+                    required
                   />
                 </div>
                 <div className="form-group">
@@ -94,6 +96,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     className="lname"
                     placeholder="Last Name"
+                    required
                   />
                 </div>
                 <div className="form-group">
@@ -104,16 +107,18 @@ const Contact = () => {
                     onChange={handleInputChange}
                     className="email"
                     placeholder="Email"
+                    required
                   />
                 </div>
                 <div className="form-group">
                   <input
-                    type="number"
+                    type="tel"
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
                     className="phone"
                     placeholder="Phone"
+                    required
                   />
                 </div>
                 <div className="form-group">
@@ -122,10 +127,13 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     placeholder="Write your message"
+                    required
                   ></textarea>
                 </div>
               </div>
-              <input type="submit" value="Send Message" className="submit-button" />
+              <button type="submit" className="submit-button">
+                Send Message
+              </button>
             </form>
           </div>
         </div>
@@ -135,4 +143,3 @@ const Contact = () => {
 }
 
 export default Contact;
-
