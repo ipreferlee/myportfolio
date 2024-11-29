@@ -39,8 +39,9 @@ const Hobbies = () => {
           </div>
         </div>
 
-        {/* Image Section */}
-      
+        <div className="hobbies-img-container">
+          <img src={hobbiesImg1} alt="Basketball" className="hobbies-img" />
+        </div>
       
       </div>
     </div>
