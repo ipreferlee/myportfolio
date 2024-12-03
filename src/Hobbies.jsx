@@ -5,9 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import hobbiesImg1 from './assets/hoopcomp.png'; // Use a unique name for each image // Ensure the image names are unique
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import About from './About';
-import Education from './Education';
-import Contact from './Contact';
 import './App.css';
 
 
