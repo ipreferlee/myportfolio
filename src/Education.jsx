@@ -33,9 +33,9 @@ const Education = () => {
       <h3 className='myeduc'><u>My Education</u></h3>
       </div>
 
-            <div class="container d-flex justify-content-center" id='cards' className='education-container'>
-        <div class="row align-items-start">
-          <div class="col">
+            <div id='cards' className='education-container'>
+        <div className="row align-items-start">
+          <div className="col">
             <Card style={{ width: '18rem' }} id='card-body' >
             <Card.Img id='educ-img' variant="top" src={angelesLogo} />
             <Card.Body>
@@ -48,7 +48,7 @@ const Education = () => {
           </Card>
           </div>
           
-          <div class="col">
+          <div className="col">
           <Card style={{ width: '18rem' }}>
           <Card.Img id='educ-img' variant="top" src={systemPlus} />
           <Card.Body>
@@ -60,7 +60,7 @@ const Education = () => {
           </Card.Body>
         </Card>
           </div>
-          <div class="col">
+          <div className="col">
           <Card style={{ width: '18rem' }}>
           <Card.Img id='educ-img' variant="top" src={ncfLogo} />
           <Card.Body>
