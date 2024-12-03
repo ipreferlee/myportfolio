@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 
-
+const myImage = process.env.PUBLIC_URL + '/assets/Person-Assets.png';
 const About = () => {
   return (
     <div>
