@@ -8,14 +8,7 @@ import myImage from './assets/Person-Assets.png';
 import ncfLogo from './assets/NCF-LOGO.png';
 import angelesLogo from './assets/angeles.jpg';
 import systemPlus from './assets/systemplus.jpg';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './Home';
-import About from './About';
-import Hobbies from './Hobbies';
-import Contact from './Contact';
-import './App.css';
-
+import { Link } from 'react-router-dom';
 
 const Education = () => {
   return (
