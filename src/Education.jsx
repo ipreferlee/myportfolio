@@ -20,9 +20,9 @@ const Education = () => {
           <Navbar.Collapse id="navbarNav" className="justify-content-center">
             <Nav className="mx-auto">
 
-             <Nav.Link as={Link} to="/home">Home</Nav.Link>
+             <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="/About">About</Nav.Link>
-              <Nav.Link as={Link} to="/">Education</Nav.Link>
+              <Nav.Link as={Link} to="/Education">Education</Nav.Link>
               <Nav.Link as={Link} to="/Hobbies">Hobbies</Nav.Link>
               <Nav.Link as={Link} to="/Contact">Contact</Nav.Link>
             </Nav>
