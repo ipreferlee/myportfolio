@@ -1,10 +1,10 @@
-
 import React from 'react';
 import myImage from './assets/Person-Assets.png';  // Assuming you want to use this image
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';  // Import Link for routing
+import './App.jsx';  // Assuming you're importing your CSS here
 
 const About = () => {
   return (
@@ -39,7 +39,6 @@ const About = () => {
           animation: "backgroundChange 10s infinite alternate", // Ensure backgroundChange is defined in CSS
         }}
       >
-
         <div
           style={{
             background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)", // Corrected gradient syntax
