@@ -10,6 +10,7 @@ import './App.css';
 const App = () => {
   return (
     <BrowserRouter>
+      <Router future={{v7_startTransition:true, v7relativeSplatPath:true}}></Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
