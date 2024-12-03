@@ -15,10 +15,10 @@ const Home = () => {
           <Navbar.Collapse id="navbarNav" className="justify-content-center">
             <Nav className="mx-auto">
               <Nav.Link as={Link} to="/">Home</Nav.Link>
-              <Nav.Link as={Link} to="/About">About</Nav.Link>
-              <Nav.Link as={Link} to="/Education">Education</Nav.Link>
-              <Nav.Link as={Link} to="/Hobbies">Hobbies</Nav.Link>
-              <Nav.Link as={Link} to="/Contact">Contact</Nav.Link>
+              <Nav.Link as={Link} to="/about">About</Nav.Link>
+              <Nav.Link as={Link} to="/education">Education</Nav.Link>
+              <Nav.Link as={Link} to="/hobbies">Hobbies</Nav.Link>
+              <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
