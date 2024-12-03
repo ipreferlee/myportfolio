@@ -7,7 +7,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Home';
-import About from './About';
 import Education from './Education';
 import Hobbies from './Hobbies';
 import Contact from './Contact';
