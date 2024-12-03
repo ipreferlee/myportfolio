@@ -6,6 +6,11 @@ import hobbiesImg1 from './assets/hoopcomp.png'; // Use a unique name for each i
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Home from './Home';
+import About from './About';
+import Education from './Education';
+import Contact from './Contact';
+
 
 
 const Hobbies = () => {
