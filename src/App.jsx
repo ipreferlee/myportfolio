@@ -1,26 +1,24 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from './Home';
-import About from './About';
-import Education from './Education';
-import Hobbies from './Hobbies';
-import Contact from './Contact';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Education from './components/Education';
+import Hobbies from './components/Hobbies';
+import Contact from './components/Contact';
 
-const App = () => {
+function App() {
   return (
-    <BrowserRouter>
-      <Router future={{v7_startTransition:true, v7relativeSplatPath:true}}></Router>
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path='/Education' element={<Education/>} />
-        <Route path='/Hobbies' element={<Hobbies/>} />
-        <Route path='/Contact' element={<Contact/>} />
-         
+        <Route path="/about" element={<About />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/hobbies" element={<Hobbies />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
-};
+}
 
 export default App;
+
