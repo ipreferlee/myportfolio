@@ -36,7 +36,7 @@ const Home = () => {
             
 
         </div>
-        <img src={myImage} alt="description" width={300} className='profile-photo' />
+        <img src='./assets/myphoto.jpg' alt="description" width={300} className='profile-photo' />
       </div>
     </div>
   );
