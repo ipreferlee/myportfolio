@@ -30,7 +30,7 @@ const Home = () => {
             <span className='cs-name'>BSCS STUDENT</span>
             <p>Studying at Naga College Foundation. <br /> Taking Bachelor of Science in Computer Science.</p>
             <Link to="/About">
-                <button class="button type1"><span className="btn-txt">Get Started</span></button>
+                <button className="button type1"><span className="btn-txt">Get Started</span></button>
             </Link>
             
 
